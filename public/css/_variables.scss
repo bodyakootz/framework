@@ -1,3 +1,6 @@
+// GENERAL
+	$main_font: Arial;
+
 // NAVIGATION
 	$navbar-default-bg: green;//NAV BACKGROUND
 	$navbar-default-border: yellow;//NAV BORGER
@@ -30,4 +33,20 @@
 	$login_modal_title_background: #cfcfcf;//TITLE BACKGROUND
 	$login_input_w: 400px;//INPUT WIDTH
 	$login_input_outline: red;//INPUT OUTLINE
-	
+
+//FOOTER
+	$copyright_color: red; //FOOTER COPYRIGHT COLOR
+
+// LEFT_SIDEBAR
+	$left_sidebar_width: 260px;//SIDEBAR WIDTH
+	$left_sidebar_height: 780px;// SIDEBAR MIN HEIGHT
+	$left_sidebar_shadow: 2px 3px 7px #757171; // SIDEBAR BOX SHADOW
+	$left_sidebar_border_radius: 5px; // SIDEBAR RADIUS
+
+// RIGHT_SIDEBAR
+	$right_sidebar_width: 260px;//SIDEBAR WIDTH
+	$right_sidebar_height: 780px;// SIDEBAR MIN HEIGHT
+	$right_sidebar_shadow: -2px 3px 7px #757171; // SIDEBAR BOX SHADOW
+	$right_sidebar_border_radius: 5px; // SIDEBAR RADIUS	
+
+

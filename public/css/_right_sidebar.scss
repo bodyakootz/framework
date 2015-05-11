@@ -1,0 +1,31 @@
+.right_sidebar {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	width: $right_sidebar_width;
+	min-height: $right_sidebar_height;
+	box-shadow: $right_sidebar_shadow;
+	border-radius: $right_sidebar_border_radius;
+	padding: 15px;
+	margin-left: 20px;
+}
+// UNCOMMENT IF THERE IS A SEARCH
+// .left_sidebar_search {
+// 	width: 225px;
+// }
+// .left_sidebar_input {
+// 	width: 225px !important;
+// 	height: 45px;
+// 	outline-color: #cecece;
+// }	
+// .left_sidebar_input:focus {
+// 	border-color: #cecece;
+// 	outline-color: #cecece;
+// }
+// .left_sidebar_catalog_main_heading,
+// .left_sidebar_heading,
+// .recent_heading {
+// 	color: #6f2429;
+// 	font-size: 16px;
+// 	font-weight: bold;
+// }

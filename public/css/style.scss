@@ -8,30 +8,44 @@ $browser-prefixes: true !default;
 // VARIABLES
 @import "variables";
 // GENERAL
+/*GENERAL*/
 
 // HELPERS
+/*HEPLERS*/
 @import "auth";
 @import "helpers";
 
 // BUTTONS
+/*BUTTONS*/
 @import "buttons";
 
 // FLASH MESSAGES
+/*FLASH MESSAGES*/
 @import "flash_messages";
 
 // MODAL
+/*MODAL*/
 
 // PARTIALS
 // HEADER
+/*HEADER*/
 @import "header";
 
 // NAVBAR
+/*NAVBAR*/
 @import "navbar";
-
 // LEFT SIDEBAR
+/*LEFT SIDEBAR*/
+@import "left_sidebar";
 
 // RIGHT SIDEBAR
+/*RIGHT SIDEBAR*/
+@import "right_sidebar";
 
 // CATALOG
+/*CATALOG*/
 
 // FOOTER
+/*FOOTER*/
+@import "footer";
+

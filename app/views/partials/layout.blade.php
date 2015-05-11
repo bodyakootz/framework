@@ -21,6 +21,11 @@
 	</head>
 	<body> {{--add all parts of the page after this tag--}}
 		@yield('header')
+		@yield('left_sidebar')
+		@yield('right_sidebar')
+
+		@yield('footer')
+
 
 		{{ HTML::script('js/jquery.min.js') }} {{--new place--}}
 		{{ HTML::script('js/bootstrap.min.js') }} {{--new place--}}

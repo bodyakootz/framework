@@ -1,87 +1,184 @@
-/*
-Error: Mixin placeholder is missing argument $main_font.
-        on line 37 of _auth.scss, in `placeholder'
-        from line 37 of _auth.scss
-        from line 13 of style.scss
+/*GENERAL*/
+/*HEPLERS*/
+.login {
+  display: none; }
+  .login .login_label {
+    font-size: 16px;
+    color: #292929;
+    margin-left: 10px;
+    margin-top: 10px; }
 
-32: 
-33: // RIGHT SIDEBAR
-34: 
-35: // CATALOG
-36: 
-37: // FOOTER
+.login_form {
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .login_form .form-control {
+    width: 400px; }
+    .login_form .form-control:focus {
+      border-color: red; }
+  .login_form .form-control::-webkit-input-placeholder {
+    color: yellow;
+    font-size: 20px;
+    font-family: Arial; }
+  .login_form .form-control::-moz-placeholder {
+    color: yellow;
+    font-size: 20px;
+    font-family: Arial; }
+  .login_form .form-control:-moz-placeholder {
+    color: yellow;
+    font-size: 20px;
+    font-family: Arial; }
+  .login_form .form-control:-ms-input-placeholder {
+    color: yellow;
+    font-size: 20px;
+    font-family: Arial; }
 
-Backtrace:
-_auth.scss:37:in `placeholder'
-_auth.scss:37
-style.scss:13
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:73:in `block in perform_arguments'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:65:in `zip'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:65:in `perform_arguments'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:358:in `block in visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Mixin placeholder is missing argument $main_font.\A         on line 37 of _auth.scss, in `placeholder'\A         from line 37 of _auth.scss\A         from line 13 of style.scss\A \A 32: \A 33: // RIGHT SIDEBAR\A 34: \A 35: // CATALOG\A 36: \A 37: // FOOTER"; }
+.jBox-container {
+  width: auto;
+  height: auto;
+  background: #cecece;
+  padding: 10px 10px 10px 10px;
+  font-family: sans; }
+  .jBox-container .jBox-title {
+    font-size: 16px;
+    color: #292929;
+    background: #cfcfcf; }
+  .jBox-container .jBox-content {
+    display: table;
+    margin: auto;
+    width: auto !important;
+    height: auto !important; }
+
+.full_screen {
+  display: table;
+  width: 100%; }
+
+/*BUTTONS*/
+.exit_btn {
+  color: red;
+  background: blue;
+  font-size: 18px;
+  border-color: blue; }
+  .exit_btn:hover, .exit_btn:focus, .exit_btn.focus {
+    color: red;
+    background: #0000cc;
+    border-color: #0000c2; }
+
+.auth_btn {
+  color: red;
+  background: blue;
+  font-size: 18px;
+  border-color: blue; }
+  .auth_btn:hover, .auth_btn:focus, .auth_btn.focus {
+    color: red;
+    background: #0000cc;
+    border-color: #0000c2; }
+
+.submit_btn {
+  color: yellow;
+  background: green;
+  font-size: 18px;
+  border-color: green;
+  margin-top: 5%; }
+  .submit_btn:hover, .submit_btn:focus, .submit_btn.focus {
+    color: yellow;
+    background: #004d00;
+    border-color: #004300; }
+
+/*FLASH MESSAGES*/
+/*MESSAGE*/
+.message {
+  width: 1132px;
+  position: absolute;
+  top: 255px;
+  font-size: 21px;
+  margin-left: 19px;
+  z-index: 101; }
+
+.alert {
+  padding: 2px; }
+
+.message_text {
+  display: table;
+  margin: auto;
+  text-align: center; }
+
+.close {
+  margin-top: 6px;
+  margin-right: 30px; }
+
+.close_message {
+  position: absolute;
+  right: -5px; }
+
+/*MODAL*/
+/*HEADER*/
+/*NAVBAR*/
+.navbar-default {
+  background-color: green;
+  border-color: yellow; }
+  .navbar-default .navbar-brand {
+    color: blue; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: vlack;
+      background-color: purple; }
+  .navbar-default .navbar-text {
+    color: white; }
+  .navbar-default .navbar-nav > li > a {
+    color: white; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: purple;
+      background-color: yellow; }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: red;
+    background-color: grey; }
+  .navbar-default .navbar-link {
+    color: white; }
+    .navbar-default .navbar-link:hover {
+      color: purple; }
+  .navbar-default .btn-link {
+    color: white; }
+    .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
+      color: purple; }
+
+/*LEFT SIDEBAR*/
+.left_sidebar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 260px;
+  min-height: 780px;
+  box-shadow: 2px 3px 7px #757171;
+  border-radius: 5px;
+  padding: 15px;
+  margin-right: 20px; }
+
+/*RIGHT SIDEBAR*/
+.right_sidebar {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  width: 260px;
+  min-height: 780px;
+  box-shadow: -2px 3px 7px #757171;
+  border-radius: 5px;
+  padding: 15px;
+  margin-left: 20px; }
+
+/*CATALOG*/
+/*FOOTER*/
+.copyright {
+  display: block; }
+  .copyright .our_link {
+    float: right;
+    margin-right: 5%; }
+    .copyright .our_link p {
+      color: red; }
+    .copyright .our_link a {
+      color: #9ccb49; }
+      .copyright .our_link a:hover {
+        color: #13b4e6;
+        text-decoration: none; }
+      .copyright .our_link a:active, .copyright .our_link a:focus {
+        outline: none;
+        text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

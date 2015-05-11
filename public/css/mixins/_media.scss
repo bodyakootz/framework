@@ -1,33 +1,29 @@
 // Media mixins 
-@mixin mediaxs() {
-	/*------------------------------------------------
-	| For XS (<= 767px):
-	------------------------------------------------*/
-	@media screen and (max-width: 767px) {
-	    
-	}
-}
-@mixin mediasm() {
-	/*------------------------------------------------
-	| For SM (<= 991px):
-	------------------------------------------------*/
-	@media screen and (min-width: 768px) and (max-width: 991px) {
-	    
-	}
-}
-@mixin mediamd() {
-	/*------------------------------------------------
-	|  For MD (<= 1199px):
-	------------------------------------------------*/
-	@media screen and (min-width: 992px) and (max-width: 1199px) {
-	    
-	}
-}
-@mixin medialg() {
-	/*------------------------------------------------
-	|  For LG (> 1200px):
-	------------------------------------------------*/
-	@media screen and (min-width: 1200px) {
-	   
-	}
+@mixin media($type) {
+  
+  @if $type == mobile {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  
+  }
+  @else if $type == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+
+  }
+  @else if $type == laptop {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+
+  }
+  @else if $type == pc {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+
+  }
+  
 }
