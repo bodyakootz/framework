@@ -1,4 +1,4 @@
-@section('catalog_inline')
+@section('catalog')
 	<div class="catalog_inline">
 		{{-- @foreach($items as $item) --}}
 			<div class="item">

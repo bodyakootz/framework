@@ -8,24 +8,11 @@
 	@yield('meta')
 	<title>Зип Общепит - Комплексное оснащение баров, ресторанов, кафе, пищевых производств и магазинов</title>
 	<link rel="shortcut icon" href="{{ asset('img/markup/favicon_admin.ico') }}">
+	{{ HTML::style('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic-ext') }}
 	{{ HTML::style('css/bootstrap.min.css') }}
 	{{ HTML::style('css/font-awesome.min.css') }}
-	{{ HTML::style('css/style.css') }}
-	{{ HTML::style('css/flash_messages.css') }}
+	{{ HTML::style('css/plugins/jBox/jBox.css') }}
 	{{ HTML::style('css/admin.css') }}
-	{{ HTML::style('css/pdf.css') }}
-	{{ HTML::style('css/magnific-popup.css') }}
-	{{ HTML::style('css/animate-popup.css') }}
-	{{ HTML::style('css/jquery-ui.min.css') }}
-	{{ HTML::style('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic-ext') }}
-	{{ HTML::script('js/jquery.min.js') }}
-	{{ HTML::script('js/jquery.magnific-popup.min.js') }}
-	{{ HTML::script('ckeditor/ckeditor.js') }}
-	{{ HTML::script('js/jquery.ui.widget.js') }}
-	{{ HTML::script('js/jquery.iframe-transport.js') }}
-	{{ HTML::script('js/jquery.fileupload.js') }}
-	{{ HTML::script('js/bootstrap.min.js') }}
-	{{ HTML::script('js/jquery-ui.min.js') }}
 
 	@yield('css')
 </head>
@@ -34,13 +21,17 @@
 	@yield('header')
 	@yield('left_sidebar')
 	<div class="container_main">
-		@yield('right_sidebar')
 		@yield('body')
 	</div>	
 	@yield('footer')
 
-	{{ HTML::script('js/common.js') }}
+
+	{{ HTML::script('js/jquery.min.js') }}
+	{{ HTML::script('ckeditor/ckeditor.js') }}
+	{{ HTML::script('js/bootstrap.min.js') }}
+	{{ HTML::script('js/jBox.min.js') }}
 	{{ HTML::script('js/admin.js') }}
+	{{ HTML::script('js/admin_modals.js') }}
 	@yield('js')
 </body>
 </html>

@@ -6,5 +6,5 @@ new jBox('Modal', {
     title: 'Log in',
     content: $('#login_content')
 });
- 
+
 
