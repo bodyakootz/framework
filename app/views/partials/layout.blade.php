@@ -36,6 +36,7 @@
 		{{ HTML::script('js/animation.js') }}
 		{{ HTML::script('js/modals.js') }}
 		{{ HTML::script('js/navigation.js') }}
+		{{ HTML::script('js/catalog_blocks.js') }}
 
 		@yield('js')
 	</body>
