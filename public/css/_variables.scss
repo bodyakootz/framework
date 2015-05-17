@@ -1,5 +1,6 @@
 // GENERAL
-	$main_font: Arial;
+	$main_font: Arial;//MAIN FONT
+	$main_width: 100%;//MAIN CONTENT WIDTH
 
 // NAVIGATION
 	$navbar-default-bg: green;//NAV BACKGROUND
@@ -35,18 +36,39 @@
 	$login_input_outline: red;//INPUT OUTLINE
 
 //FOOTER
+	$footer_background: yellow;//FULL SCREEN COLOR
+	$footer_padding: 10px 10px 10px 10px;
 	$copyright_color: red; //FOOTER COPYRIGHT COLOR
 
 // LEFT_SIDEBAR
-	$left_sidebar_width: 260px;//SIDEBAR WIDTH
+	$left_sidebar_width: 20%;//SIDEBAR WIDTH
 	$left_sidebar_height: 780px;// SIDEBAR MIN HEIGHT
 	$left_sidebar_shadow: 2px 3px 7px #757171; // SIDEBAR BOX SHADOW
 	$left_sidebar_border_radius: 5px; // SIDEBAR RADIUS
+	$left_sidebar_margin: 1%;//SIDEBAR MARGIN
 
 // RIGHT_SIDEBAR
 	$right_sidebar_width: 260px;//SIDEBAR WIDTH
 	$right_sidebar_height: 780px;// SIDEBAR MIN HEIGHT
 	$right_sidebar_shadow: -2px 3px 7px #757171; // SIDEBAR BOX SHADOW
 	$right_sidebar_border_radius: 5px; // SIDEBAR RADIUS	
+	$right_sidebar_margin: 2%;//SIDEBAR MARGIN
+
+// CATALOG_INLINE
+	$catalog_inline_width: 100% - $left_sidebar_width - 5% ;//ALL CATALOG WIDTH CHANGE -5% IF NEDDED
+	$catalog_inline_margin: (100% - $catalog_inline_width - $left_sidebar_width)/2 - $left_sidebar_margin; //MARGIN FOR CATALOG FOR BOTH SIDES ADD RIGHT_SIDEBAR IF NEEDED
+	$catalog_inline_padding: 5px; //ALL CATALOG PADDING
+	// ITEM
+		$catalog_inline_item_height: 300px; //ITEM BLOCK HEIGHT
+		$catalog_inline_item_padding: 25px 25px 25px 25px; //ITEM BLOCK PADDING
+		$catalog_inline_item_color: #fff;//ITEM BACKGROUND
+		$catalog_inline_item_img_width: 150px; //ITEM IMAGE WIDTH
+		$catalog_inline_item_img_height: 150px; //ITEM IMAGE HEIGHT
+		$catalog_inline_item_img_margint_top: ($catalog_inline_item_height - $catalog_inline_item_img_height - 50px)/2;//MARGIN FOR IMG BLOCK 25 - FIRST VALUE IN ITEM PADDING
+		$catalog_inline_item_title_size: 18px; //FONT-SIZE FOR ITEM TITLE
+		$catalog_inline_item_title_width: 300px; //WIDTH OF ITEM TITLE
+		$catalog_inline_item_title_height: 50px; //HEIGHT OF ITEM TITILE
+		$catalog_inline_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
+
 
 

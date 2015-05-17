@@ -21,9 +21,11 @@
 	</head>
 	<body> {{--add all parts of the page after this tag--}}
 		@yield('header')
-		@yield('left_sidebar')
-		@yield('right_sidebar')
-
+		<div class="main_content">
+			@yield('left_sidebar')
+			{{-- @yield('right_sidebar') --}}
+			@yield('catalog')
+		</div>
 		@yield('footer')
 
 

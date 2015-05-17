@@ -6,7 +6,7 @@
 	box-shadow: $left_sidebar_shadow;
 	border-radius: $left_sidebar_border_radius;
 	padding: 15px;
-	margin-right: 20px;
+	margin-right: $left_sidebar_margin;
 }
 // UNCOMMENT IF THERE IS A SEARCH
 // .left_sidebar_search {
