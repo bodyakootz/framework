@@ -59,14 +59,14 @@
 	$catalog_inline_margin: (100% - $catalog_inline_width - $left_sidebar_width)/2 - $left_sidebar_margin; //MARGIN FOR CATALOG FOR BOTH SIDES ADD RIGHT_SIDEBAR IF NEEDED
 	$catalog_inline_padding: 5px; //ALL CATALOG PADDING
 	// ITEM
-		$catalog_inline_item_height: 300px; //ITEM BLOCK HEIGHT
-		$catalog_inline_item_padding: 25px 25px 25px 25px; //ITEM BLOCK PADDING
+		$catalog_inline_item_height: 135px; //ITEM BLOCK HEIGHT
+		$catalog_inline_item_padding: 10px 10px 10px 10px; //ITEM BLOCK PADDING
 		$catalog_inline_item_color: #fff;//ITEM BACKGROUND
-		$catalog_inline_item_img_width: 150px; //ITEM IMAGE WIDTH
-		$catalog_inline_item_img_height: 150px; //ITEM IMAGE HEIGHT
-		$catalog_inline_item_img_margint_top: ($catalog_inline_item_height - $catalog_inline_item_img_height - 50px)/2;//MARGIN FOR IMG BLOCK 25 - FIRST VALUE IN ITEM PADDING
+		$catalog_inline_item_img_width: 75px; //ITEM IMAGE WIDTH
+		$catalog_inline_item_img_height: 75px; //ITEM IMAGE HEIGHT
+		$catalog_inline_item_img_margint_top: ($catalog_inline_item_height - $catalog_inline_item_img_height - 20px)/2;//MARGIN FOR IMG BLOCK 25 - FIRST VALUE IN ITEM PADDING
 		$catalog_inline_item_title_size: 18px; //FONT-SIZE FOR ITEM TITLE
-		$catalog_inline_item_title_width: 300px; //WIDTH OF ITEM TITLE
+		$catalog_inline_item_title_width: 30px; //WIDTH OF ITEM TITLE
 		$catalog_inline_item_title_height: 50px; //HEIGHT OF ITEM TITILE
 		$catalog_inline_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 
