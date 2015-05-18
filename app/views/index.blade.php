@@ -5,7 +5,7 @@
 @extends('partials/footer')
 @extends('partials/left_sidebar')
 {{-- @extends('partials/right_sidebar') --}}
-@extends('partials/catalog_blocks_allo')
+@extends('partials/catalog_blocks_comfy')
 
 
 

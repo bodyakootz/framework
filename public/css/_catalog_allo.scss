@@ -2,18 +2,17 @@
 $catalog_width: 100% - $left_sidebar_width - 5%;
 $catalog_margin: (100% - $catalog_width - $left_sidebar_width)/2 - $left_sidebar_margin; //MARGIN FOR CATALOG FOR BOTH SIDES ADD RIGHT_SIDEBAR IF NEEDED
 $catalog_padding: 5px; //ALL CATALOG PADDING
-// ITEM
-$catalog_item_height: 400px; //ITEM BLOCK HEIGHT
-$catalog_item_padding: 0px 20px 0px; //ITEM BLOCK PADDING
+// ITEM 3 BLOCKS - ITEM - THE WRAP; ITEM_CONTENT - THE CONTENT AND HOVER_BLOCK - REST OF CONTENT ON HOVER
+$catalog_item_width: 235px;
+$catalog_item_padding: 19px 18px 0px 18px; //ITEM CONTENT PADDING
 $catalog_item_color: #fff;//ITEM BACKGROUND
-$catalog_item_border: solid 1px #e6e8e9;//ITEM BACKGROUND
-$catalog_item_img_width: 75px; //ITEM IMAGE WIDTH
-$catalog_item_img_height: 75px; //ITEM IMAGE HEIGHT
-$catalog_item_img_margint_top: ($catalog_inline_item_height - $catalog_inline_item_img_height - 20px)/2;//MARGIN FOR IMG BLOCK 25 - FIRST VALUE IN ITEM PADDING
-$catalog_item_title_size: 18px; //FONT-SIZE FOR ITEM TITLE
-$catalog_item_title_width: 30px; //WIDTH OF ITEM TITLE
-$catalog_item_title_height: 50px; //HEIGHT OF ITEM TITILE
-$catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
+// $catalog_item_border: solid 1px #e6e8e9;//ITEM BORDER UNCOMMENT IF NEEDED
+$catalog_item_hover_shadow: 2px 1px 10px 3px rgba(250, 250, 250, 250);
+$catalog_item_code_color: lighten($main_black, 30%);
+$catalog_item_buy_block_width: $catalog_item_width - 40px; //195px
+$catalog_item_img_width: 192px; //ITEM IMAGE WIDTH
+$catalog_item_img_height: 131px; //ITEM IMAGE HEIGHT
+$catalog_buy_btn_color: red;
 
 .catalog_blocks {
 	width: $catalog_inline_width;
@@ -31,21 +30,21 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	margin: 0;
 }
 .item {
-	width: 235px;
 	margin-right: 0;
 	font-size: 14px;
 	float: left;
-	width: 217px;
+	width: $catalog_item_width;
 	margin-right: 13px;
 	margin-bottom: 13px;
+	background-color: $catalog_item_color;
+	// border: $catalog_item_border;
 }
 .item_content {
-	padding: 19px 15px 0 15px;
-	width: 195px;
-	padding: 19px 18px 0 18px;
+	width: $catalog_item_width;
+	padding: $catalog_item_padding;
 	position: relative;
 	z-index: 0;
-	width: 227px;
+	// width: 227px;
 	&:hover {
 		z-index: 100;
 		border-top: 1px solid #f0f0f0;
@@ -53,9 +52,7 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 		border-right: 1px solid #f0f0f0;
 		border-bottom: none;
 		margin: -1px -1px 0 -1px;
-		-moz-box-shadow: 2px 1px 10px 3px rgba(250, 250, 250, 250);
-		-webkit-box-shadow: 2px 1px 10px 3px rgba(250, 250, 250, 250);
-		box-shadow: 2px 1px 10px 3px rgba(250, 250, 250, 250);
+		@include box-shadow($catalog_item_hover_shadow);
 		.hover_block {
 			z-index: 200;
 			display: block;
@@ -68,6 +65,10 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	position: relative;
 	z-index: 0;
 	margin-bottom: 5px;
+	img {
+		max-width: $catalog_item_img_width;
+		max-height: $catalog_item_img_height;
+	}
 }
 .item_description {
 	height: 80px
@@ -81,10 +82,9 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 }
 .item_code {
 	font-size: 11px;
-	color: #929292;
+	color: $catalog_item_code_color;
 }
 .delivery_time {
-	/* width: 155px; */
 	text-align: left;
 	height: 17px;
 	display: inline-block;
@@ -98,27 +98,24 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 }
 .delivery_icon {
 	display: inline-block;
-	/* width: 52px; */
-	/* padding-left: 7px; */
 	margin-top: -1px;
 	position: absolute;
 }
 .buy_block {
-	width: 196px;
+	width: $catalog_item_buy_block_width;
 	margin: 11px 0 5px 0px;
 }
 .price_block {
 	display: inline-block;
 	font: bold 22px Arial, Helvetica, sans-serif;
-	color: #595959;
-	/* margin-right: 3px; */
+	color: lighten($main_black, 20%); //#595959;
 	line-height: 29px;
 }
 .buy_button {
 	float: right;
 }
 .buy_btn {
-	width: 75px;
+	width: $catalog_item_buy_block_width - 120px; // 75px;
 	height: 29px;
 	float: right;
 	border: 0;
@@ -127,18 +124,22 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	cursor: pointer;
 	position: relative;
 	border-radius: 4px;
-	background: #e31837;
-	background-image: -moz-linear-gradient(top, #e31837 0%, #f03048 41%, #f3364c 50%, #f03048 61%, #e41938 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e31837), color-stop(41%,#f03048), color-stop(50%,#f3364c), color-stop(61%,#f03048), color-stop(100%,#e41938));
-	background-image: -webkit-linear-gradient(top, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
-	background-image: -o-linear-gradient(top, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
-	background-image: -ms-linear-gradient(top, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
-	background-image: linear-gradient(to bottom, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
+	background: $catalog_buy_btn_color;
+	&:hover {
+		background-color: darken($catalog_buy_btn_color, 12%);
+		color: lighten($main_black, 10%);
+	}
+	// background-image: -moz-linear-gradient(top, #e31837 0%, #f03048 41%, #f3364c 50%, #f03048 61%, #e41938 100%);
+	// background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e31837), color-stop(41%,#f03048), color-stop(50%,#f3364c), color-stop(61%,#f03048), color-stop(100%,#e41938));
+	// background-image: -webkit-linear-gradient(top, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
+	// background-image: -o-linear-gradient(top, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
+	// background-image: -ms-linear-gradient(top, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
+	// background-image: linear-gradient(to bottom, #e31837 0%,#f03048 41%,#f3364c 50%,#f03048 61%,#e41938 100%);
 	vertical-align: middle;
 }
 .hover_block {
 	z-index: 10;
-	font: normal 12px Arial, Helvetica, sans-serif;
+	font: normal 12px $main_font;
 	display: none;
 	position: relative;
 	top: -1px;
@@ -146,7 +147,6 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 }
 .item_more_info {
 	padding: 4px 15px 10px 15px;
-	width: 195px;
 	margin: 0 -1px 0 2px;
 	position: absolute;
 	left: -21px;
@@ -155,26 +155,24 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	border-left: 1px solid #f0f0f0;
 	border-right: 1px solid #f0f0f0;
 	border-top: none;
-	-moz-box-shadow: 2px 3px 10px 3px rgba(250, 250, 250, 250);
-	-webkit-box-shadow: 2px 3px 10px 3px rgba(250, 250, 250, 250);
-	box-shadow: 2px 3px 10px 3px rgba(250, 250, 250, 250);
+	@include box-shadow($catalog_item_hover_shadow);
 	position: relative;
 	z-index: 0;
 	zoom: 1;
-	width: 227px;
+	width: $catalog_item_width;
 	background-color: white;
 }
 .content {
 	line-height: 15px;
-	/* padding: 3px 14px 6px 0; */
-	width: 200px;
+	width: $catalog_item_width - 30px;
 }
 .params {
-	color: #595959;
+	color: lighten($main_black, 20%);
 	font-size: 12px;
 	text-align: left;
-	padding: 10px 0 4px 0;
+	padding: 10px 3px 4px 3px;
 	border-top: 1px solid #f0f0f0;
+
 }
 
 

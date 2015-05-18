@@ -6,14 +6,12 @@ $catalog_padding: 5px; //ALL CATALOG PADDING
 $catalog_item_height: 400px; //ITEM BLOCK HEIGHT
 $catalog_item_padding: 0px 20px 0px; //ITEM BLOCK PADDING
 $catalog_item_color: #fff;//ITEM BACKGROUND
-$catalog_item_border: solid 1px #e6e8e9;//ITEM BACKGROUND
-$catalog_item_img_width: 75px; //ITEM IMAGE WIDTH
-$catalog_item_img_height: 75px; //ITEM IMAGE HEIGHT
-$catalog_item_img_margint_top: ($catalog_inline_item_height - $catalog_inline_item_img_height - 20px)/2;//MARGIN FOR IMG BLOCK 25 - FIRST VALUE IN ITEM PADDING
-$catalog_item_title_size: 18px; //FONT-SIZE FOR ITEM TITLE
-$catalog_item_title_width: 30px; //WIDTH OF ITEM TITLE
-$catalog_item_title_height: 50px; //HEIGHT OF ITEM TITILE
+$catalog_item_border: solid 1px #e6e8e9;//ITEM BORDER
+$catalog_item_img_width: 340px; //ITEM IMAGE WIDTH
+$catalog_item_img_height: 255px; //ITEM IMAGE HEIGHT
 $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
+$catalog_item_price_color: red;
+$catalog_item_more_btn_color: blue;
 
 .catalog_blocks {
 	width: $catalog_inline_width;
@@ -91,10 +89,10 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	margin: 20px 0 0;
 	display: inline-block;
 	width: 100%;
-	min-height: 255px;
-	max-height: 255px;
+	min-height: $catalog_item_img_height;
+	max-height: $catalog_item_img_height;
 	img {
-		max-width: 340px;
+		max-width: $catalog_item_img_width;
 		max-height: 100%;
 		width: 100%;
 	}
@@ -138,12 +136,12 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	margin: -4px -8px 0 0;
 	height: 66px;
 	border-radius: 50% / 50%;
-	background: #ffe121;
+	background: $catalog_item_price_color;
 	top: 0;
 	left: 0;
 	z-index: 1;
-	box-shadow: 0 4px 4px -4px #e1af00;
-	border-bottom: 1px solid #e1af00;
+	box-shadow: 0 4px 4px -4px lighten($catalog_item_price_color, 10%);
+	border-bottom: 1px solid lighten($catalog_item_price_color, 10%);
 	line-height: 63px;
 	position: relative;
 	margin: 15px 0 0;
@@ -226,13 +224,17 @@ $catalog_item_table_color: #cecece; //COLOR FOR TABLE PARAMS
 	float: right;
 	display: inline-block;
 	border: 0;
-	background: #f14915;
+	background: $catalog_item_more_btn_color;
 	color: #FFF;
 	font-size: 13px;
 	padding: 0 17px;
 	line-height: 35px;
-	border-bottom: 1px solid #b72f1d;
-	text-shadow: 0 -1px 0 #bd450b;
+	border-bottom: 1px solid lighten($catalog_item_more_btn_color, 15%);
+	text-shadow: 0 -1px 0 lighten($catalog_item_more_btn_color, 15%);
+	&:hover {
+		color: #fff;
+		background-color: darken($catalog_item_more_btn_color, 12%);
+	}
 }
 
 
